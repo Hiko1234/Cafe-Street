@@ -84,7 +84,7 @@ const MENU = [
   {
     id: 3,
     img: 'img/menu-section/menu-6.jpg',
-    name: 'Cappucino',
+    name: 'Waffle Ice Crem',
     price: '12 K',
     rating: '4,8',
     comment: 'Wafle with Ice cream',
