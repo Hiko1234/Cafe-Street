@@ -1,0 +1,112 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F6EBDA;
+}
+
+.no-scroll {
+    overflow-y: hidden;
+}
+
+// scroll
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ccc;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(92.95deg, #af5400 0.82%, #FF902B 96.47%);
+    border-radius: 40px;
+    box-shadow: 0 0 20px 3px #FF902B;
+}
+
+// ----------------
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+* {
+    margin: 0;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: 2px;
+
+    @media (max-width: 479.98px) {
+        font-size: 24px;
+    }
+
+    span {
+        position: relative;
+    }
+
+    span::before {
+        content: '';
+        width: 100%;
+        height: 4px;
+        background-color: #FF902B;
+        border-radius: 12px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+.buy-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 43px;
+    height: 43px;
+    background-color: #FF902B;
+    border-radius: 50%;
+    transition: 0.5s;
+
+    &:hover {
+        box-shadow: 0 0 10px 4px #FF902B;
+    }
+
+    .buy-img {
+        width: 18px;
+        height: 17px;
+    }
+}
+
+.text {
+    font-size: 18px;
+    font-family: 400;
+    color: #7E7D7A;
+}
+
+.rating {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 26px;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 27px;
+    border: 4px solid rgb(255, 255, 255, 0.5);
+}
+
+.d-none{
+    display: none;
+}
